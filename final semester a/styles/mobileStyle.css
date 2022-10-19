@@ -1,0 +1,208 @@
+@media screen and (max-width: 767px) {
+
+    body {
+      max-width: 767px;
+    }
+  
+    .header {
+      display: none;
+    }
+  
+    .navbar {
+      display: none;
+    }
+  
+    .mobile-header {
+      display: block;
+    }
+  
+  
+    .navbar a {
+      flex-direction: column;
+      margin-top: 5px;
+      min-width: 250px;
+      margin-left: 110px;
+    }
+  
+  
+    .create h2 {
+      margin-top: 100px;
+      min-width: 450px;
+      margin-left: 70px;
+    }
+  
+  
+    .shapes {
+      max-width: 70%;
+      margin-left: 240px;
+  
+    }
+  
+  
+    .shop h2 {
+      margin-left: 200px;
+    }
+  
+    .shop p {
+      margin-left: 170px;
+      min-width: 250px;
+    }
+  
+    .shapes img {
+      width: 35px;
+    }
+  
+    .shapes a {
+      margin-right: 8px;
+    }
+  
+    .categorys {
+      max-width: 95%;
+      margin-left: 280px;
+  
+    }
+  
+    .item {
+      min-width: 14%;
+      max-width: 15%;
+      margin-right: 80px;
+    }
+  
+    .item p {
+      font-size: 12px;
+      text-align: center;
+      align-items: center;
+      margin-left: 15px;
+    }
+  
+    .item img {
+      min-width: 70px;
+    }
+  
+  
+    .love {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .photos {
+      max-width: 95%;
+      display: flex;
+      margin-left: 20px;
+    }
+  
+    .your-way {
+      min-width: 300px;
+      margin-left: 150px;
+  
+    }
+  
+    .gift {
+      margin-left: 25px;
+      min-width: 550px;
+    }
+  
+  
+    .new h1 {
+      font-size: 30px;
+      margin-left: 170px;
+      min-width: 250px;
+    }
+  
+    .new {
+      min-width: 70%;
+      max-width: 95%;
+  
+    }
+  
+    .new .tile {
+      margin-left: 70px;
+      min-width: 25px;
+    }
+  
+  
+    .new .grid-block {
+      min-width: 150px;
+      transform: scale(3.5);
+      margin-top: 180px;
+    }
+  
+  
+    .diploma {
+      margin-left: 20px;
+      min-width: 560px;
+      flex-direction: column;
+    }
+  
+    .diploma .diamond {
+      max-width: 300px;
+    }
+  
+    .dimploma-text {
+      max-width: 530px;
+    }
+  
+  
+  
+    .pirsomot {
+      min-width: 600px;
+    }
+  
+  
+    .luxury h2 {
+      margin-left: 170px;
+      min-width: 250px;
+    }
+  
+    .luxury p {
+      min-width: 480px;
+      margin-left: 60px;
+    }
+  
+    .luxury .luxury-icons {
+      display: none;
+    }
+  
+  
+    .all-footer {
+      min-width: 600px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .costumer-service {
+      margin-right: 15px;
+    }
+  
+    .inspiration {
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px;
+    }
+  
+    .inspiration span {
+      margin-left: 150px;
+    }
+  
+    .social a i {
+      margin-top: 35px;
+      margin-right: 25px;
+    }
+  
+    .footer .social {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .copy {
+      text-align: center;
+      min-width: 550px;
+    }
+  }

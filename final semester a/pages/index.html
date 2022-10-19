@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/mobileStyle.css">
+  <script src="../data/products.js" defer></script>
+  <script src="../db/cart.js" defer></script>
+  <script src="../logic/cartScripts.js" defer></script>
+  <script src="../logic/mobileScripts.js" defer></script>
+  <script src="../logic/indexScripts.js" defer></script>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  <title>Nir's Diamonds</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="mobile-header">
+    <div class="mobile-nav">
+      <a href="#home" class="active"><span style="font-size: 28px; font-weight: 900; color: black;">Nir</span><span
+          style="font-size: 20px; color: darkturquoise;">Diamonds</span></a>
+      <div id="myLinks">
+        <a href="#shop">Shop By Catrgory</a>
+        <a href="#gift">Perfect Gifts</a>
+        <a href="#new">New Collection</a>
+        <a href="#diploma">Gemologist Certification</a>
+        <a href="#luxury">Luxury With Confidence</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="navForMobile()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="header">
+    <div class="left-icons">
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+      <a href="#"><i class="fas fa-concierge-bell"><span>Client Care</span> </i></a>
+
+      <span class="currency">
+        <button class="currency-curent">
+          <span class="hidden-on-mobile">Currency:</span>
+
+          <span class="currency-name">
+            <i class="fas fa-dollar-sign"></i>
+            USD
+          </span>
+        </button>
+
+        <div class="currency-dropdown">
+          <i class="fas fa-dollar-sign">USD</i>
+          <i class="fas fa-pound-sign">GBP</i>
+          <i class="fas fa-euro-sign">EUR</i>
+          <i class="fas fa-shekel-sign">NIS</i>
+        </div>
+      </span>
+    </div>
+
+    <div class="logo">
+      <a href="index.html">
+        <h2> Nir's Diamonds </h2>
+      </a>
+    </div>
+
+    <div class="right-icons">
+      <a href="#"><i class="far fa-calendar"> <span>Book an Appointment</span> </i></a>
+      <a href="#"><i class="fas fa-user"></i></a>
+      <span> <a href="#"><i class="fas fa-heart"></i></a></span>
+      <a href="#"><i id="cartBut" class="fas fa-shopping-bag"></i></a>
+    </div>
+  </div>
+
+
+  <div class="navbar">
+    <a href="jewlerys.html">Jewelry</a>
+    <a href="#">Love & Engagement</a>
+    <a href="#">Watches</a>
+    <a href="#">Home & Accessories</a>
+    <a href="#">Fragrance</a>
+    <a href="#">Men's</a>
+    <a href="#">Gifts</a>
+    <a href="#">What's New</a>
+    <i class="fas fa-bars"></i>
+  </div>
+
+
+
+  <div id="cart" class="cart">
+    <button id="close" href="#"><i class="fa-solid fa-xmark"></i></button>
+    <div class="products-items" id="cart-items"></div>
+    <p>
+      Total-Price:
+      <span class="total-price" id="cart-total-price">0</span>
+    </p>
+    <p>
+      Total-Items:
+      <span class="total-items" id="cart-total-items"></span>
+    </p>
+
+    <a href="cart.html" id="go-to-big-cart">Proceed To Checkout</a>
+  </div>
+
+  <div id="create" class="create">
+    <h2> CREATE ENGAGEMENT RING </h2>
+    <div class="shapes">
+      <a href="#"><img src="../images/shapes/round.png" alt="">Round</a>
+      <a href="#"><img src="../images/shapes/cushion.png" alt="">Cushion</a>
+      <a href="#"><img src="../images/shapes/oval.png" alt="">Oval</a>
+      <a href="#"><img src="../images/shapes/pear.png" alt="">Pear</a>
+      <a href="#"><img src="../images/shapes/princess.png" alt="">Princess</a>
+      <a href="#"><img src="../images/shapes/radiant.png" alt="">Radiant</a>
+      <a href="#"><img src="../images/shapes/square-radiant.png" alt="">Square<br>Radiant</a>
+      <a href="#"><img src="../images/shapes/emerald.png" alt="">Emerald</a>
+      <a href="#"><img src="../images/shapes/heart.png" alt="">Heart</a>
+      <a href="#"><img src="../images/shapes/marquise.png" alt="">Marquise</a>
+    </div>
+  </div>
+
+
+
+  <div id="shop" class="shop">
+    <h2>Shop by Category</h2>
+    <p>Brilliant design and unparalleled craftsmanship.
+    </p>
+  </div>
+
+  <div class="categorys">
+    <div class="item">
+      <a href="#"><img src="../images/categories/nwckless.jpg" alt=""></a>
+      <a href="#">
+        <p>Necklaces</p>
+      </a>
+    </div>
+
+    <div class="item">
+      <a href="#"><img src="../images/categories/earings.jpg" alt=""></a>
+      <a href="#">
+        <p>Earrings</p>
+      </a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="../images/categories/ring.jpg" alt=""></a>
+      <a href="#">
+        <p>Rings</p>
+      </a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="../images/categories/braceat.jpg" alt=""></a>
+      <a href="#">
+        <p>Bracelets</p>
+      </a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="../images/categories/engagement.jpg" alt=""></a>
+      <a href="#">
+        <p>Engagement Rings</p>
+      </a>
+    </div>
+    <div class="item">
+      <a href="#"><img src="../images/categories/watch.jpg" alt=""></a>
+      <a href="#">
+        <p>Watches</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="love">
+    <div class="photos">
+      <img src="../images/index-images/L_E_2021_CAMPAIGN_LP_50_50_STYLES_AND_SETTINGS_DESKTOP.jpg" alt="">
+      <img src="../images/index-images/L_E_2021_GUIDE_TO_DIAMONDS_LP_50_50_DIAMOND_SHAPES.jpg" alt="">
+    </div>
+    <div class="your-way">
+      <h2>Love Your Way</h2>
+      <p>You’ll know who it’s for. You’ll know
+        <br>
+        when it’s time. You’ll just know.</p>
+
+      <a href="#">Explore Love & Engagement</a> <i class="fas fa-angle-right"></i>
+    </div>
+  </div>
+
+  <div id="gift" class="gift">
+    <h2>Perfect Gifts</h2>
+    <p>GIVE THE UNFORGETTABLE
+      <br>
+      SHOP THE SALE
+    </p>
+    <div class="buttons">
+      <div class="button">
+        <p>UNDER $150</p>
+      </div>
+      <div class="button">
+        <p>$150 - $250</p>
+      </div>
+      <div class="button">
+        <p>$250 - $350</p>
+      </div>
+      <div class="button">
+        <p>$350 - $500</p>
+      </div>
+      <div class="button">
+        <p>$500 - $1000</p>
+      </div>
+      <div class="button">
+        <p>$1000 - $2000</p>
+      </div>
+      <div class="button">
+        <p>OVER $2000</p>
+      </div>
+      <div class="button">
+        <p>SAMPLE SALE</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="../images/slider/jewels-sparkle-golden-wedding-rings-lying-leather.jpg"
+        style="width:100%;  height: auto;">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="../images/slider/render-diamond-crown-expensive-grind.jpg" style="width:100%;  height: auto;">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="../images/slider/ripple-ornament-forever-drop-costume.jpg" style="width:100%; height: auto;">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <div id="new" class="new">
+    <h1>TRY OUR NEW COLLECTION</h1>
+    <div class="grid image-grid">
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img1"
+              src="../images/new/elsa-perettimesh-earrings-26836476_870504_ED-26836476_870504_ED.jpg" alt="Image">
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img2"
+              src="../images/new/tiffany-1837interlocking-circles-chain-bracelet-35505873_988453_ED_M-35505873_988453_ED_M.jpg"
+              alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img3"
+              src="../images/new/tiffany-co-schlumberger36-stone-bracelet-15149582_926237_ED-15149582_926237_ED.jpg"
+              alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img4"
+              src="../images/new/tiffany-harmonyring-33400306_1022015_ED_M-33400306_1022015_ED_M.jpg" alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img5"
+              src="../images/new/tiffany-knotdouble-row-necklace-68887186_1028560_ED-68887186_1028560_ED.jpg"
+              alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img6"
+              src="../images/new/tiffany-metrohoop-earrings-67025091_1030879_ED-67025091_1030879_ED.jpg" alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img7"
+              src="../images/new/tiffany-victoriadiamond-vine-bypass-ring-in-platinum-66886425_1006777_ED_M-66886425_1006777_ED_M.jpg"
+              alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img8"
+              src="../images/new/tiffany-victoriavine-drop-necklace-69523412_1028577_ED-69523412_1028577_ED.jpg"
+              alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img9" src="../images/new/earing.jpg" alt="Image">
+          </a>
+        </div>
+      </div>
+
+      <div class="grid-block">
+        <div class="tile">
+          <a class="tile-link" href="#">
+            <img class="tile-img tile-img10"
+              src="../images/new/elsa-perettidiamonds-by-the-yard-drop-earrings-28554559_870562_ED-28554559_870562_ED.jpg"
+              alt="Image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="diploma" class="diploma">
+    <div class="diamond">
+      <img src="../images/shapes/shutterstock_1530093494-scaled-1-1536x991.jpg" alt="">
+    </div>
+    <div class="dimploma-text">
+      <h3>Gemologist Certification</h3>
+      <p>Before purchasing a diamond, one must follow its documentation process, which proves that it has passed an
+        impartial inspection, and obtain a "diamond certificate" (also known as a "gemological certificate"). The
+        diamond certificate is supervised by a team of gemologists after a professional examination to determine the
+        value of the diamond, measure its dimensions and check its properties under a microscope and other professional
+        tools.
+        The full report includes an analysis of the dimensions, color, finish, symmetry and other characteristics of the
+        diamond.
+        Many of the round diamond reports also include the polishing rating.<br>
+        <span style="font-weight: bold;"> The institutes we work with - GIA, IGL, IGI, EGL, HRD</span></p>
+    </div>
+  </div>
+
+
+  <div class="pirsomot">
+    ADVERTISMENT ZONE
+  </div>
+
+
+  <div id="luxury" class="luxury">
+    <h2>Luxury With Confidence</h2>
+    <p>Nothing is overlooked: from our signature packaging and prompt <br>
+      worldwide delivery, to personalised gift messages.</p>
+    <div class="luxury-icons">
+      <a href="#"><i class="fas fa-globe-europe">
+          <p>FREE WORLDWIDE <br>
+            DELIVERY</p>
+        </i></a>
+      <a href="#"><i class="fas fa-backward">
+          <p>30 DAY FREE <br>
+            RETURNS</p>
+        </i></a>
+      <a href="#"><i class="fas fa-stamp">
+          <p>5 YEAR <br>
+            GUARANTEE</p>
+        </i></a>
+      <a href="#"><i class="fas fa-id-card">
+          <p>PERSONALISED <br>
+            GIFT CARDS</p>
+        </i></a>
+      <a href="#"><i class="fas fa-gifts">
+          <p>LUXURIOUS <br>
+            PACKAGING</p>
+        </i></a>
+    </div>
+  </div>
+
+
+  <div class="all-footer">
+    <div class="footer">
+      <div class="about">
+        <h3>ABOUT</h3>
+        <a href="#">About</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Press</a>
+      </div>
+
+      <div class="help-me">
+        <h3>HELP ME</h3>
+        <a href="#">Ring size guide</a>
+        <a href="#">Learning Centre</a>
+        <a href="#">101 proposal ideas</a>
+        <a href="#">FAQ</a>
+      </div>
+
+
+      <div class="costumer-service">
+        <h3>CUSTOMER SERVICE</h3>
+        <a href="#">Help</a>
+        <a href="#">Delivery</a>
+        <a href="#">Refunds & Returns</a>
+        <a href="#">Track your order</a>
+        <a href="#">Read reviews</a>
+        <a href="#">Contact us</a>
+      </div>
+
+      <div class="inspiration">
+        <h3>INSPIRATION IN YOUR INBOX</h3>
+        <p>Get our latest offers, jewellery inspiration and be
+          the first to shop new arrivals</p>
+        <span><input type="text" placeholder="Your Email"> <button>send</button></span>
+      </div>
+
+      <div class="social">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="copy">
+      <p>Copyright © 2022. All Rights Reserved. The Diamond Store Regalian Limited | Registered in Israel
+        Regulated by the FCA - Consumer Credit Licence: 731102 | Regalian Ltd t/a Nir's Diamonds acts as a credit broker
+        and will introduce you to V12 Retail Finance Limited to complete your application for finance. We may receive a
+        commission if your application is successful, and the amount may vary depending on the product chosen and the
+        amount of credit taken out.</p>
+    </div>
+  </div>
+
+</body>
+</html>
